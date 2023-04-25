@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+    <title>CSS Selecto Example</title>
+
+<head>
+    <style>
+        /* 요소 선택자 */
+        h1 {
+            color: black;
+        }
+
+        /* 클래스 선택자 */
+        .intro {
+            color: red;
+        }
+
+        /* ID 선택자 */
+        #main {
+            font-style: italic;
+            color: crimson;
+        }
+
+        /* 자식 선택자 */
+        div>p {
+            color: black;
+        }
+
+        /* 인접 형제 선택자 */
+        h1+p {
+            font-size: 16px;
+        }
+
+        /* 일반 형제 선택자 */
+        h1~p {
+            color: black;
+        }
+
+        /* 속성 선택자 */
+        [href] {
+            color: purple;
+        }
+
+        /* 속성 값 선택자 */
+        [href='https://example.com'] {
+            font-size: 20px;
+        }
+
+        /* 시작 부분 일치 선택자 */
+        [class^='para'] {
+            font-weight: bold;
+        }
+
+        /* 종료 부분 일치 선택자 */
+        [class$='456'] {
+            font-style: italic;
+        }
+
+        /* 포함하는 부분 일치 선택자 */
+        [class*='para'] {
+            text-decoration: underline;
+        }
+        ul>li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h1>CSS Selector Example</h1>
+        <p class="intro">Lorem ipsum</p>
+            <p>이 요소는 단락 요소 입니다. 글자의 색 이름은 'crimson'입니다.font-style은 이탤릭입니다.</p>
+            <p>이 요소는 단락 요소 입니다.1</p>
+            <p>이 요소는 단락 요소 입니다.2</p>
+            <p>이 요소는 단락 요소 입니다.3</p>
+        <ul>
+            <li> unordered list 입니다. ul -> li의 구조를 가집니다. 1</li>
+            <li> unordered list 입니다. ul -> li의 구조를 가집니다. 2</li>
+            <li> unordered list 입니다. ul -> li의 구조를 가집니다. 3</li>
+        </ul>
+            <p>이 요소는 단락 요소 입니다.4</p>
+            <p>이 요소는 단락 요소 입니다.5</p>
+            <p>이 요소는 단락 요소 입니다.6</p>
+        <p class="paragraph">클래스 이름에 "para"가 있는 단락입니다.</p>
+        <p class="456">클래스 이름에 "para"가 있는 또 다른 단락입니다.</p>
+        <a href="https://example.com">Link to example.com</a>
+    </div>
+</body>
+
+</html>
